@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*:focus {
+    outline:none !important
+}
+
+#body {
+    background: #ECECEC;
+}
+
+/*Cards*/
+
+.card__basket {
+    background: white;
+    border: none;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.card__basket div {
+    background: white;
+}
+
+.card__order {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card__basket h6 {
+    min-width: 500px;
+    background: white;
+}
+
+.card__basket h5 {
+    padding-left: 20px;
+    min-width: 150px;
+    background: white;
+}
+
+.card__purchase {
+    transform: translate(250%);
+    background: white;
+    border: none;
+}
+
+.card__checkout {
+    background: white;
+    border: none;
+    padding: 20px;
+}
+
+.card__checkout__items {
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.card__device {
+    border: none;
+    width: 11rem;
+    min-height: 13rem;
+    margin-right: 40px;
+    background: transparent;
+}
+
+.card__favorites {
+    border-bottom: 1px solid black;
+}
+
+.card__description {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/*Header*/
+
+.header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.count__header {
+    background: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.1rem;
+    left: 2.5rem
+}
+
+.icon_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list__brands {
+    display: none;
+}
+
+.list__brands__view {
+    display: block!important;
+}
+
+
+/*Buttons*/
+
+.button {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button__card_basket {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.button__checkout {
+    border-radius: 5px;
+    background: white;
+    border: 1px solid lightgray;
+    width: 50%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.button__checkout:hover {
+    background: rgb(245, 245, 245);
+    border: 1px solid black;
+}
+
+.button__checkout:focus {
+    border: 1px solid red;
+    background: rgb(245, 245, 245)
+}
+
+.button__checkout__pay {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.button__disabled {
+    pointer-events: none;
+    color: gray;
+    font-weight: 500;
+}
+
+/*Loader*/
+
+.lds-hourglass {
+    display: flex;
+    justify-content: center;
+}
+.lds-hourglass:after {
+    position: absolute;
+    top: 50%;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid red;
+    border-color: red transparent red transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+/*Inputs*/
+
+.input__search {
+    margin-left: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 3px;
+    border: 1px solid #919191;
+}
+
+.input__search:hover {
+    border: 1px solid #787878;
+}
+
+.input__search:focus {
+    padding-left: 10px;
+    border-color: black
+}
+
+.btn-basket {
+    background: lightgray;
+    border: 1px solid gray;
+    color: black
+}
+
+.category__modal div {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.brand__modal div:hover .category__modal {
+    background: white;
+    border-right: 2px solid red;
+}
+
+.category__modal__active__hover {
+    background: #F5F5F5;
+    border-right: 2px solid red;
+}
+
+.category__modal__active:hover {
+    background: #F5F5F5;
+    border-right: 2px solid red;
+}
+
+.brand__modal div {
+    background: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.brand__modal {
+    display: flex;
+}
+
+.list__brands__view:hover {
+    color: red;
+}
+
+.carousels img {
+    border-radius: 0.8rem;
+}
+
+
+
+
+
+
